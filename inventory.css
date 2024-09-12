@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+} 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 14%;
+}
+.active {
+    color: green;
+    font-size: 19px;
+}
+
+
+/*-------------header  */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    box-shadow: 6px 5px 15px gray;
+    height: 45px;
+    position: absolute;
+    top: 0;
+}
+header h1 {
+    font-size: 20px;
+    color: brown;
+}
+header h1 span {
+    color: green;
+}
+header ul {
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul li {
+    list-style-type: none;
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    transition: color 5ms;
+}
+header ul li a:hover {
+    color: green;
+}
+
+
+
+
+/*-----------------all items  */
+.all-items {
+    margin-top: 7%;
+    width: 60%;
+}
+.all-items div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all-items div input {
+    font-size: 19px;
+    padding: 5px 20px;
+    font-weight: bold;
+    width: 50%;
+}
+.all-items div button {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 7px 25px 7px 10px;
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.all-items table {
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 100%;
+}
+.all-items table th,td {
+    border: 1px solid black;
+    padding: 6px 5px;
+}
+.all-items table tr th:nth-child(1) {
+    width: 50%;
+    text-align: left;
+}
+.all-items table tr th:nth-child(2),
+.all-items table tr td:nth-child(2) {
+    width: 12%;
+    text-align: center;
+}
+.all-items table tr th:nth-child(3),
+.all-items table tr td:nth-child(3) {
+    text-align: center;
+    width: 16%;
+}
+.all-items table tr th:nth-child(4) {
+    width: 22%;
+    text-align: left;
+}
+th {
+    font-weight: bold;
+    font-size: 18px;
+}
+td {
+    font-size: 16px;
+}
+
+
+
+/*-----------add inventory page  */
+.add {
+    margin-top: 13%;
+}
+.add small {
+    font-size: 18px;
+    display: block;
+}
+.add input {
+    font-size: 18px;
+    padding: 7px 15px 2px 5px;
+    border: none;
+    border-bottom: 1.5px solid green;
+    border-left: 3px solid green;
+    margin: 8px 0;
+    width: 50%;
+    display: block;
+}
+.add input:nth-child(1) {
+    width: 75%;
+}
+.add input:nth-child(3) {
+    width: 35%;
+}
+.add button {
+    width: 110px;
+    height: 30px;
+    color: white;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: darkgreen;
+    border: none;
+    display: block;
+    margin: 10px 0 20px 40%;
+    transition: transfrom 800ms;
+}
+.add button:hover {
+    transform: scale(1.05);
+}
+.add p {
+    font-size: 17px;
+    display: inline;
+}
+.add select {
+    font-size: 16px;
+    padding: 4px 8px;
+}
+.wrong {
+    background-color: darkred;
+    color: white;
+    font-size: 15px;
+    padding: 5px 30px;
+    display: none;
+}
+.right {
+    background-color: darkgreen;
+    color: white;
+    font-size: 15px;
+    padding: 5px 30px;
+    display: none;
+}
+
+
+/*-----------edit inventory page  */
+.all-edit-items {
+    margin-top: 7%;
+    width: 80%;
+}
+.all-edit-items button {
+    font-size: 13px;
+    cursor: pointer;
+    width: 65px; 
+    height: 23px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.all-edit-items table {
+    margin-top: 15px;
+    /* border-collapse: collapse; */
+    width: 100%;
+}
+.all-edit-items table th, td {
+    border: 1px solid black;
+    padding: 6px 5px;
+}
+.all-edit-items table tr th:nth-child(1) {
+    width: 40%;
+    text-align: left;
+}
+.all-edit-items table tr th:nth-child(2),
+.all-edit-items table tr td:nth-child(2) {
+    width: 12%;
+    text-align: center;
+}
+.all-edit-items table tr th:nth-child(3),
+.all-edit-items table tr td:nth-child(3) {
+    text-align: center;
+    width: 16%;
+}
+.all-edit-items table tr th:nth-child(4) {
+    width: 32%;
+    text-align: left;
+}
+.all-edit-items table tr td:nth-child(4) {
+    display: grid;
+    height: 43px;
+    align-items: center;
+    grid-template-columns: 1fr 100px 75px;
+}
+.all-edit-items button:nth-child(1) {
+    background-color: green;
+}
+.all-edit-items button:nth-child(2) {
+    background-color: darkred;
+}
+
+
+
+.all-edit-items input {
+    width: 95%;
+    padding: 3px 8px;
+    font-size: 16px;
+}
+#save-button {
+    background-color:goldenrod;
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+    header ul {
+        width: 50%;
+    }
+    .all-items {
+        margin-top: 7%;
+        width: 78%;
+    }
+    .all-edit-items {
+        width: 90%;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    .all-edit-items {
+        width: 98%;
+    }
+    .all-edit-items table tr td:nth-child(4) {
+        grid-template-columns: 1fr 80px 70px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 15px;
+    }
+    .all-items {
+        margin-top: 12%;
+        width: 82%;
+    }
+    .all-edit-items table tr th:nth-child(1) {
+        width: 45%;
+    }
+    .all-edit-items table tr th:nth-child(2),
+    .all-edit-items table tr td:nth-child(2) {
+        width: 10%;
+    }
+    .all-edit-items table tr th:nth-child(3),
+    .all-edit-items table tr td:nth-child(3) {
+        width: 13%;
+    }
+    .all-edit-items table tr th:nth-child(4) {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        padding: 0 15px;
+    }
+    .all-items {
+        margin-top: 12%;
+        width: 82%;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    header {
+        padding: 0 5px;
+    }
+    header ul {
+        width: 50%;
+    }
+    .all-items {
+        margin-top: 12%;
+        width: 95%;
+    }
+}

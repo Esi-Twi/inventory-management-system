@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Add Item</title>
+    <link rel="stylesheet" href="./inventory.css">
+</head>
+<body>
+
+    <header>
+        <h1>Inventory<span>Management</span> System</h1>
+        <ul>
+            <li><a class="active" href="./inventory-add.html">Add Item</a></li>
+            <li><a href="./inventory.html">Available Items</a></li>
+            <li><a href="./inventory-edit.html">Edit Item</a></li>
+        </ul>
+    </header>
+
+    <section class="add">
+        <small>Please fill the spaces to add item to inventory</small>
+        <div>
+            <input id="inventory-name" type="text" placeholder="Name of item..">
+            <input id="inventory-price" type="text" placeholder="price ....">
+            <input id="inventory-quantity" type="text" placeholder="how many ??????">
+            <p>Category:</p>
+            <select name="" id="select-category">
+                <option value="beverage">beverage</option>
+                <option value="cooking">cooking</option>
+                <option value="bathing">bathing </option>
+                <option value="washing">washing</option>
+                <option value="brushing">brushing</option>
+                <option value="provision">provision</option>
+                <option value="sweeping">sweeping</option>
+                <option value="rubber">rubber</option>
+            </select>
+        </div>
+        <button id="add-button">Add</button>
+        <p id="add-comment"></p>
+    </section>
+
+    <script type="module" src="./inventory-add.js"></script>
+</body>
+</html>
